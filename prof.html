@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NYUer</title>
+  <link href="https://cdn.bootcss.com/semantic-ui/2.3.1/semantic.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!--         <img class="ui middle aligned small rounded image" id="headShot" src="https://cdn.shanghai.nyu.edu/sites/default/files/field/profile/NYUSH%20Bio%20Headshot%20Marin%2C%20Olivier.jpg">
+  <span id="professorName">Professor Name</span> -->
+
+  <div class="ui fixed inverted main menu">
+        <div class="ui container">
+            <!-- <a class="launch icon item">
+                <i class="chart line icon"></i>
+            </a > -->
+            <div class="item">
+                <a href="/"><i class="chart line icon"></i></a>
+            </div>
+            <a href="/"><div class="item">Swift Planner</div></a>
+            <div class="right menu">
+                <div class="vertically fitted borderless item"></div>
+            </div>
+        </div>
+    </div>
+
+
+  <div class="ui list" style="margin-top: 60px;">
+    <div class="item">
+      <img class="ui small rounded image" id="headShot" src="http://placeholder.qiniudn.com/100x128">
+      <div class="content" id="professorInfo">
+
+        <a class="header" id= "professorName" href="javascript:;">Loading ...</a>
+
+        <div class="ui heart rating static" id="professorStar" data-rating="0" data-max-rating="5"></div>
+
+        <div id="description" class="description">Loading, Please Wait ...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="ui divider" style=""></div> -->
+
+  <div class="ui piled segment" id="professorBio">
+      <i class="ui basic loading massive button disabled" style="width: 100%; margin: 5px 0px;"></i>
+  </div>
+
+
+  <div class="ui threaded comments" id="commentsArea">
+    <h3 class="ui dividing header">Comments</h3>
+    <loader id="commentLoader">
+        <i class="ui basic loading massive button disabled" style="width: 100%; margin: 5px 0px;"></i>
+    </loader>
+    <form class="ui reply form">
+      <div class="field">
+        <textarea id="commentBox"></textarea>
+      </div>
+
+      <div class="ui heart rating edit" id="rateProfessor" data-rating="3" data-max-rating="5"></div>
+
+      <br /><br />
+
+      <div class="ui blue labeled submit icon button" onclick="submitComment()">
+        <i class="icon edit"></i> Add Reply
+      </div>
+
+    </form>
+  </div>
+
+
+
+<!--   <div class="ui raised segment">
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+  </div> -->
+
+
+  <script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/semantic-ui/2.3.1/semantic.min.js"></script>
+  <script src="js/bmob-sdk/bmob-min.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
