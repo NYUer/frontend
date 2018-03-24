@@ -32,6 +32,7 @@ function refreshData(data) {
 		return;
 	}
 	let profName = data.preferred_name;
+	NNAME = data.preferred_name;
 	let jobType = data.school_or_div;
 	let html = `
 		<h3 class="ui header" style="margin-top:15px">BIO</h3>
@@ -62,7 +63,7 @@ function submitComment(){
 	data.save({
 	  rate: rating,
 	  comment: commentt,
-	  professor_name: "Olivier Marin",
+	  professor_name: NNAME,
 	  professor_nyuid: NID
 	}, {
 	  success: function(data) {
