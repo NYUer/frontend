@@ -7,7 +7,7 @@ $('.ui.rating.static')
 ;
 
 var NID = "";
-let BASEURI = "http://sp.nyu.wiki";
+let BASEURI = "http://api-sp.nyu.wiki";
 Bmob.initialize("1fe041375281fb38612829308c8b2f06", "5e2d348f45b02e6915c8be18e384e335");
 
 function getProf() {
