@@ -172,7 +172,7 @@
             let nid = facultyList[c].instructor_nyu_id;
             let n = facultyList[c].instructor_name;
             $(`#btnp-${nid}`).on("click", function() {
-                window.open(`/prof.html#${nid}/n`, "_self");
+                window.open(`/prof.html#${nid}/${n}`, "_self");
             });
             getRate(nid, (rate) => {
                 $(`#rate-${nid}`).removeClass("flush");
