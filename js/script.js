@@ -7,21 +7,30 @@ $('.ui.rating.static')
 ;
 
 var NID = "";
+var NNAME = "";
 let BASEURI = "http://api-sp.nyu.wiki";
 Bmob.initialize("1fe041375281fb38612829308c8b2f06", "5e2d348f45b02e6915c8be18e384e335");
 
 function getProf() {
-	axios.get(`${BASEURI}/faculty?instructor_nyu_id=${NID}`)
+	axios.get(`${BASEURI}/faculty?instructor_nyu_id=${NID}`, { timeout: 5000 })
 			 .then(function(response) {
 					let data = response.data;
 					refreshData(data);
 			 })
-			 .then(function(error) {});
+			 .then(function(error) {
+					refreshData([""]);
+			 });
 }
 
 function refreshData(data) {
 	if (!data.length) return;
 	data = data[0];
+	if (!data) {
+		$("#professorName").html(NNAME);
+		$("#description").html("Nothing.");
+		$("#professorBio").html("<p>It seems that this faculty is not recorded in NYU Database.</p>");
+		return;
+	}
 	let profName = data.preferred_name;
 	let jobType = data.school_or_div;
 	let html = `
@@ -116,6 +125,11 @@ window.onload = function () {
 	if (!NID) window.open("/", "_self");
 	else {
 		NID = NID.substr(1);
+		let index = NID.indexOf("/");
+		if (index > -1) {
+			NNAME = NID.substr(index+1);
+			NID = NID.substr(0, index);
+		}
 	}
 	getProf();
 	getRate();
