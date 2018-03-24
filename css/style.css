@@ -12,8 +12,8 @@
 }
 
 #professorInfo{
-	margin-top: 10%;
-	width: calc(100% - 140px);
+    margin-top: 4%;
+    width: calc(90% - 140px);
 }
 
 #professorBio{
