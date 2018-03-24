@@ -28,7 +28,7 @@ function refreshData(data) {
 	if (!data) {
 		$("#professorName").html(NNAME);
 		$("#description").html("Nothing.");
-		$("#professorBio").html("<p>It seems that this faculty is not recorded in NYU Database.</p>");
+		$("#professorBio").html("<p>It seems that this faculty is not recorded in NYU Database.</p><p>But you can still give a rating below.</p>");
 		return;
 	}
 	let profName = data.preferred_name;
