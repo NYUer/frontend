@@ -1,13 +1,10 @@
 # frontend
-Course planner with professor rating for NYU students
+Simple and modern frontend web design.
 
-![Slice](https://img.shields.io/badge/Hexo%20Theme-Slice-ff4500.svg?style=flat-square)
-![NHibiki](https://img.shields.io/badge/Author-NHibiki-40aa00.svg?style=flat-square)
-![Code](https://img.shields.io/badge/Code%20With-<3-ff0000.svg?style=flat-square)
-
-[Demo](https://mirror.yuuno.cc) | [Customize](https://github.com/NHibiki/hexo-theme-slice#customize)
-
-## Installation
+## Reference
+github pages
+semantic ui
+bmob
 
 ### Download
 
