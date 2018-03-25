@@ -1,102 +1,17 @@
 # frontend
 Simple and modern frontend web design.
 
+## Structure
+index.html is the main page of swift planner for users to perform search by courseName and by facultyName.
+
+After the user hits search button, a dropdown menu displaying the seach results will appear for the user to choose.
+
+Items on the dropdown menu will respectively redirect the user to prof.html, which fetches data from our backend and display info.
+
 ## Reference
-github pages
-semantic ui
-bmob
 
-### Download
+GitHub Pages
 
-```bash
-  git clone https://github.com/NHibiki/hexo-theme-slice.git themes/slice
-```
+Semantic UI
 
-Or, download the zip package through [GitHub](https://github.com/NHibiki/hexo-theme-slice/archive/master.zip).
-
-Then unzip the file to folder `themes/slice`
-
-### Config
-
-You need to install these plugins to enable the theme:
-
- - hexo-generator-json-content
- - hexo-generator-feed
-
-After that, you need to add some configs to Hexo Config.
-
-```yml
-theme: slice # To Enable The Theme.
-
-jsonContent:
-  meta: true
-  dateFormat: YYYY-MM-DD HH:mm:ss
-  posts:
-    title: true
-    slug: true
-    date: true
-    updated: true
-    comments: true
-    path: true
-    link: true
-    permalink: true
-    excerpt: true
-    keywords: true
-    text: true
-    raw: false
-    content: true
-    categories: true
-    tags: true
-```
-
-<span style="color:red">Make Sure "content" and "text" are set to true if you don't want any bother.</span>
-
-### Customize
-
-Then, it is time to work on the theme `_config.yml` file.
-
-First, rename `_config.yml.edit` which is a default config to `_config.yml`
-
-```yml
-menu:
-  Home: /#/home
-  About: /#/article/about
-  Tag: /#/tag
-  Category: /#/category
-  Link: /#/link
-  NHibiki: https://yuuno.cc
-  # Menu Bar
-
-music:
-  "The Song's Name":
-    subtitle: Infomation you want to add to the song
-    src: url to the song
-  "The 2nd Song's Name":
-    subtitle: Infomation you want to add to the song
-    src: url to the song
-  # Music List
-
-comment:
-  disqus: # Disqus
-  github: # Gitalk
-    owner: 
-    repo: 
-    id: 
-    secret: 
-  crisp: # Crisp ID, You can get it through the embed code after variable "window.CRISP_WEBSITE_ID"
-# Comment System
-# The Crisp id is like "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-
-link:
-  YuunoHibiki: https://yuuno.cc
-  Slice: https://nhibiki.github.io/slice
-  # Links You Want To Add
-
-license: Creative Commons Attribution-NonCommercial 4.0 International
-  # You can change the site license, default is NC CC 4.0.
-
-```
-
-## License
-
-GNU License 3.0
+Bmob
