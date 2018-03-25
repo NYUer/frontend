@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NYUer</title>
+  <link href="https://cdn.bootcss.com/semantic-ui/2.3.1/semantic.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!--         <img class="ui middle aligned small rounded image" id="headShot" src="https://cdn.shanghai.nyu.edu/sites/default/files/field/profile/NYUSH%20Bio%20Headshot%20Marin%2C%20Olivier.jpg">
+  <span id="professorName">Professor Name</span> -->
+
+  <div class="ui list">
+    <div class="item">
+      <img class="ui small rounded image" id="headShot" src="https://cdn.shanghai.nyu.edu/sites/default/files/field/profile/NYUSH%20Bio%20Headshot%20Marin%2C%20Olivier.jpg">
+      <div class="content" id="professorInfo">
+
+        <a class="header" id= "professorName" href="https://shanghai.nyu.edu/academics/faculty/directory/olivier-marin">Olivier Marin</a>
+
+        <div class="ui heart rating static" id="professorStar" data-rating="3" data-max-rating="5"></div>
+
+        <div class="description">Associate Professor of <a href="https://shanghai.nyu.edu/academics/bulletin/overview-of-majors/computer-science"><b>Computer Science</b></a> at NYU Shanghai.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="ui divider" style=""></div> -->
+
+  <div class="ui piled segment" id="professorBio">
+    <h4 class="ui header">A header</h4>
+    <p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+     <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+     <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo. Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
+  </div>
+
+
+  <div class="ui threaded comments" id="commentsArea">
+    <h3 class="ui dividing header">Comments</h3>
+    <div class="comment">
+      <a class="avatar">
+        <img src="https://cdn.shanghai.nyu.edu/sites/default/files/field/profile/Zheng%2C%20Zhang.jpg">
+      </a>
+      <div class="content">
+        <a class="author">Zheng Zhang</a>
+        <div class="metadata">
+          <span class="date">Today at 5:42PM</span>
+        </div>
+        <div class="text">
+          How artistic!
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <a class="avatar">
+        <img src="https://cdn.shanghai.nyu.edu/sites/default/files/field/profile/Romain%20Corcolle%20Pic.jpg">
+      </a>
+      <div class="content">
+        <a class="author">Romain Corcolle</a>
+        <div class="metadata">
+          <span class="date">Yesterday at 12:30AM</span>
+        </div>
+        <div class="text">
+          <p>This has been very useful for my research. Thanks as well!</p>
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="comment">
+          <a class="avatar">
+            <img src="https://cdn.shanghai.nyu.edu/sites/default/files/field/profile/prom.jpg">
+          </a>
+          <div class="content">
+            <a class="author">Promethee Spathis</a>
+            <div class="metadata">
+              <span class="date">Just now</span>
+            </div>
+            <div class="text">
+              Romain you are always so right :)
+            </div>
+            <div class="actions">
+              <a class="reply">Reply</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <a class="avatar">
+        <img src="https://cdn.shanghai.nyu.edu/sites/default/files/field/profile/mellies.jpg">
+      </a>
+      <div class="content">
+        <a class="author">Paul Mellies</a>
+        <div class="metadata">
+          <span class="date">5 days ago</span>
+        </div>
+        <div class="text">
+          Dude, this is awesome. Thanks so much
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+    </div>
+    <form class="ui reply form">
+      <div class="field">
+        <textarea id="commentBox"></textarea>
+      </div>
+
+      <div class="ui heart rating edit" id="rateProfessor" data-rating="3" data-max-rating="5"></div>
+
+      <div></div>
+
+      <div class="ui blue labeled submit icon button" onclick="submitComment()">
+        <i class="icon edit"></i> Add Reply
+      </div>
+
+    </form>
+  </div>
+
+
+
+<!--   <div class="ui raised segment">
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+  </div> -->
+
+
+  <script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/semantic-ui/2.3.1/semantic.min.js"></script>
+  <script src="js/bmob-sdk/bmob-min.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

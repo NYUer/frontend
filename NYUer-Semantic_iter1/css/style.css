@@ -1,0 +1,36 @@
+#headShot{
+	margin: 4% 4%;
+	width: 100px;
+}
+
+#professorName{
+	margin-bottom: 0.5em;
+}
+
+#professorStar{
+
+}
+
+#professorInfo{
+	margin-top: 10%;
+	width: calc(100% - 140px);
+}
+
+#professorBio{
+    margin-top: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#commentsArea{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#commentBox{
+    height: 8em;
+}
+
+#rateProfessor{
+    margin-bottom: 5px;
+}
