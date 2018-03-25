@@ -9,9 +9,8 @@ After the user hits search button, a dropdown menu displaying the seach results 
 Items on the dropdown menu will respectively redirect the user to prof.html, which fetches data from our backend and display info.
 
 ## Reference
+[GitHub Pages](https://pages.github.com/)
 
-GitHub Pages
+[Semantic UI](https://semantic-ui.com/)
 
-Semantic UI
-
-Bmob
+[Bmob](https://www.bmob.cn/)
