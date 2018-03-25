@@ -12,12 +12,12 @@ let BASEURI = "http://api-sp.nyu.wiki";
 Bmob.initialize("1fe041375281fb38612829308c8b2f06", "5e2d348f45b02e6915c8be18e384e335");
 
 function getProf() {
-	axios.get(`${BASEURI}/faculty?instructor_nyu_id=${NID}`, { timeout: 30000 })
+	axios.get(`${BASEURI}/faculty?instructor_nyu_id=${NID}`, { timeout: 10000 })
 			 .then(function(response) {
 					let data = response.data;
 					refreshData(data);
 			 })
-			 .then(function(error) {
+			 .catch(function(error) {
 				 	if (error) refreshData([""]);
 			 });
 }
