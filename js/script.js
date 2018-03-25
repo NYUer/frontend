@@ -18,7 +18,7 @@ function getProf() {
 					refreshData(data);
 			 })
 			 .then(function(error) {
-					refreshData([""]);
+				 	if (error) refreshData([""]);
 			 });
 }
 
