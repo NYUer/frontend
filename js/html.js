@@ -11,7 +11,7 @@
     let $courseListBar = $("#courseListBar");
 
     $searchSub.on("submit", e => {
-        let option = new FormData($searchSub[0]).get("selectOption");
+        let option = $("#selectOption").val();
         e.preventDefault();
         submission(option);
     });
