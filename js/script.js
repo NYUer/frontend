@@ -23,7 +23,7 @@ function getProf() {
 }
 
 function refreshData(data) {
-	if (!data.length) data=[{}];
+	if (!data.length) data=[""];
 	data = data[0];
 	if (!data) {
 		$("#professorName").html(NNAME);
