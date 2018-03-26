@@ -105,8 +105,8 @@
                 `<div id="btn-${courseList[c].course_id}" class="title">
                     <i class="dropdown icon"></i>
                     <b style="color: #666; font-family: sans-serif; white-space: nowrap; width: calc(100% - 30px); overflow: hidden; text-overflow: ellipsis; display: inline-block;">${courseList[c].course_title}</b>
-                    <p style="padding-left: 24px; color: #AAA;">${courseList[c].term_descr} - ${courseList[c].class_type_descr}</p>
-                    <p style="padding-left: 24px; color: #AAA;">${"Location: " + courseList[c].location_description}</p>
+                    <p style="padding-left: 24px; color: #AAA;">${courseList[c].term_descr} - ${courseList[c].class_type_descr}
+                    <br />${"Location: " + courseList[c].location_description}</p>
                 </div>
                 <div class="content" style="padding: 0 0;">
                     <p id="course-${courseList[c].course_id}" class="transition hidden">
