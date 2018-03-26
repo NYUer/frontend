@@ -18,7 +18,7 @@ function getProf() {
 					refreshData(data);
 			 })
 			 .catch(function(error) {
-				 	if (error) refreshData([""]);
+				 	if (error) refreshData(["timeout"]);
 			 });
 }
 
@@ -26,9 +26,14 @@ function refreshData(data) {
 	if (!data.length) data=[""];
 	data = data[0];
 	if (!data) {
-		$("#professorName").html(NNAME);
-		$("#description").html("Nothing.");
+		$("#professorName").html(decodeURI(NNAME));
+		$("#description").html("N/A");
 		$("#professorBio").html("<p>It seems that this faculty is not recorded in NYU Database.</p><p>But you can still give a rating below.</p>");
+		return;
+	} else if (data == "timeout") {
+		$("#professorName").html(decodeURI(NNAME));
+		$("#description").html("N/A");
+		$("#professorBio").html("<p>It seems that NYU API is not responding.</p><p>But you can still give a rating below.</p>");
 		return;
 	}
 	let profName = data.preferred_name;
@@ -36,7 +41,7 @@ function refreshData(data) {
 	let jobType = data.school_or_div;
 	let html = `
 		<h3 class="ui header" style="margin-top:15px">BIO</h3>
-		<p><b>Internation Assignment Loc:</b> ${data.internation_assignment_loc || "New York"}</p>
+		<p><b>Internation Assignment Loc:</b> ${data.internation_assignment_loc || "N/A"}</p>
 		<p><b>Job Profile:</b> ${data.job_profile}</p>
 		<p><b>Job Type:</b> ${data.job_type}</p>
 		<p><b>Room Number:</b> ${data.room_number}</p>
