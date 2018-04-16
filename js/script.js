@@ -109,7 +109,7 @@ function loadComments(commentList) {
 		html +=
 			`<div class="comment">
 		      <a class="avatar">
-		        <img src="https://a.yuuno.cc/s/JMx1SneJ">
+		        <img src="https://file.yuuno.cc/JMx1SneJ">
 		      </a>
 		      <div class="content">
 		        <a class="author">Anonymous</a>
